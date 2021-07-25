@@ -1,0 +1,24 @@
+	/* ASIDE */
+    .banner{
+        color: $light5;
+        padding: 10px;
+        padding-right: 20px;
+        background-image: radial-gradient($dark2, $dark5);
+        text-align: center;
+        *{
+            padding-bottom: 5px;
+        }
+        img{
+            border-radius: 1rem;
+        }
+        .banner__imgMarca{
+            display: inline-block;
+            width: 80%;
+            border-radius: 1rem;
+            img{
+                width: 30%;
+                border-radius: 5px;
+            }
+        }
+    }
+    

@@ -1,0 +1,67 @@
+
+/* ANIMACIONES */
+//Animacion-aparecer
+.animacion__aparecer{
+	animation-name: aparecer;
+	animation-iteration-count: 1;
+}
+@for $i from 1 through 9{
+	.animacion__aparecer--#{$i}s{
+		@extend .animacion__aparecer;
+		animation-duration: #{$i}s;
+	}
+}
+@keyframes aparecer {
+	0%{opacity: 0%;}
+	100%{opacity: 100%;}
+}
+
+@media (min-width:1024px) {
+    /*animaciones solo para desktop*/
+//transicion-scaleUp
+	.transicion__scaleUp:hover{
+		transform:scale(1.2,1.2);
+
+	}
+	@for $i from 1 to 4{
+		.transicion__scaleUp--#{$i} {
+			transition: all #{$i/2}s;
+		&:hover{
+			@extend .transicion__scaleUp:hover;
+			}   
+		}
+	}
+	.transicion__scaleUp--nav{
+		@extend .transicion__scaleUp--1;
+			margin: 10px;
+		}
+	//transicion rotate
+	.transicion__rotate:hover{
+		transform:rotate(5deg);
+	}
+	@for $i from 1 to 4{
+		.transicion__rotate--#{$i} {
+			transition: all #{$i/2}s;
+		&:hover{
+			@extend .transicion__rotate:hover;
+			}   
+		}
+	}
+    .banner{
+        .banner__imgMarca{
+            img{
+                animation-name: rotate;
+				animation-iteration-count: infinite;
+				animation-duration: 2s;
+				animation-timing-function: linear;
+            }
+        }
+    }
+    @keyframes rotate {
+		0%{transform: rotate(0deg);}
+		25%{transform: rotate(2deg);}
+		50%{transform: rotate(0deg);}
+		75%{transform: rotate(-2deg);}
+		100%{transform: rotate(0deg);}
+	}
+}

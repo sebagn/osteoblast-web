@@ -1,0 +1,78 @@
+
+   /* HTML RELACIONES */
+.notas{
+	article{
+		background-color: $light5;
+		border: solid 1px gray;
+		border-radius: 1rem;
+		margin: 1rem 0;
+		padding: 1rem 0;
+		div{
+		text-align: center;
+		}
+		a{
+			text-decoration: none;
+			color: $light5;
+			background-color: $dark1;
+			border-radius: 0.5rem;
+			padding: 0.5em;
+		}
+	}
+		.align-v-mid{
+		align-self: center;
+	}
+	img{
+		border-radius: 1rem;
+		border: solid 1px;
+	}
+}
+
+.introSeccion__subtitulo{
+	width: 100%;
+	text-align: center;
+	align-self: center;
+}
+.partners{
+	ul{
+		display: inline-block;
+	}
+	li{
+		display: inline-block;
+		margin: 5px;
+	}
+}
+
+		/* HTML CONTACTO */
+.flex--list{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	li{
+		width: 10rem;
+		padding: 0.5rem;
+		border: 1px solid black;
+		border-radius: 1rem;
+		margin: 0.5rem;
+		background-color: $light5;
+		&:hover{
+			box-shadow: 1px 1px 4px $light1;
+		}
+	}
+}
+.enviaCV{
+	text-align: center;
+	box-shadow: 0 0.5rem 1rem gray;
+	.btn{
+		transform: scale(0.75,0.75);
+		background-color: $light5;
+		color: $dark5;
+		justify-self: flex-end;
+		border: solid 1px $light5;
+		&:hover{
+		background-color: gray;
+		color: $light5;
+		border: solid 1px $dark2;
+		}
+	}
+}

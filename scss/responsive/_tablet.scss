@@ -1,0 +1,52 @@
+@media (min-width: 600px) and (max-width: 1023px) {
+    .mainBodyIndex{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "bienvenida bienvenida bienvenida"
+        "productos productos productos"
+        "estandar estandar news"
+        "relaciones relaciones news"
+        "contacto contacto contacto"
+        "footer footer footer"
+        ;
+    }
+    header{
+        grid-area: header;
+    }
+    .bienvenida{
+        grid-area: bienvenida;
+    }
+    .tablaIndex{
+        grid-area: tabla;
+    }
+    .secProductos{
+        grid-area: productos;
+    }
+    .secSTD{
+        grid-area: estandar;
+    }
+    aside{
+        grid-area: news;
+        align-self: stretch;
+    }
+    .secRelaciones{
+        grid-area: relaciones;
+        height: 650px;
+    }
+    .contacto{
+        grid-area: contacto;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    .secProductos__cards{
+        width: 40%;
+    }
+
+    .bienvenida{ 
+        height: 500px;
+        background-image: url("../images/bienvenida_768.jpg");
+    }
+} /*Cierra media query for tablet*/

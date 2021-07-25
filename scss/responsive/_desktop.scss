@@ -1,0 +1,157 @@
+@media (min-width: 1024px) {
+    .mainBodyIndex{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "bienvenida bienvenida bienvenida"
+        "tabla tabla news"
+        "productos productos news"
+        "estandar estandar news"
+        "relaciones relaciones news"
+        "contacto contacto contacto"
+        "footer footer footer"
+        ;
+        grid-template-columns: 	4fr 4fr 2fr
+    }
+    header{
+        grid-area: header;
+    }
+    .bienvenida{
+        grid-area: bienvenida;
+        .bienvenida__p{
+            text-align: center;
+        }
+    }
+    .tablaIndex{
+        grid-area: tabla;
+    }
+    .secProductos{
+        grid-area: productos;
+    }
+    .secSTD{
+        grid-area: estandar;
+    }
+    aside{
+        grid-area: news;
+        align-self: stretch;
+    }
+    .secRelaciones{
+        grid-area: relaciones;
+    }
+    .contacto{
+        grid-area: contacto;
+    }
+    footer{
+        grid-area: footer;
+    }
+    html{
+        text-align: left;
+    }
+    nav{
+        ul{
+        justify-content: flex-end;
+        padding: 20px;     
+            ul{
+                padding: 0;
+            }
+            li {
+            background-color: $dark3;
+            color: $light5;
+            padding: 4px;
+            font-weight: bold;
+            position: relative;
+            }   
+            li:hover ul{
+                display: block;
+            }
+        }
+    }
+    h1{
+        text-align: center;
+    }
+    h3{
+        padding-left: 4px;
+    }
+    h4{
+        color: $dark4;
+        font-weight: bold;
+        font-size: 120%;
+        margin-bottom: 4px;
+    }
+    h5{
+        color: $dark4;
+    }
+    .secRelaciones{
+        .secRelaciones__prensa{
+            display: block;
+        }
+    }
+
+    footer{
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    .bienvenida{ 
+        height: 500px;
+        background-image: url("../images/bienvenida_1024.jpg");
+    }
+        
+    /*seccion STD 1024*/
+    .secSTD{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .secSTD__pSTD{
+            width: 60%
+        }
+        .secSTD__img{
+            margin: 2rem;
+            width: 30%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+        /*seccion productos 1024*/
+    .secProductos{
+        padding-bottom: 20px;
+        .secProductos__cards{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: space-around;
+            margin: 20px;
+            padding: 10px;
+            width: 40%;
+            }
+        }
+        .secProductos__p{
+            width: 90%;
+        }
+
+        
+    /* HTML PRODUCTOS */
+    .introSeccion{
+        .introProductos{
+            width: 40%;
+        }
+    }
+
+	//animacion-rotate--banner
+	.banner{
+		border-radius: 2rem;
+		margin: 0.5rem 0;
+		.banner__imgMarca{
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+			img{
+				border-radius: 15px;
+				padding: 5px;
+				width: 90%;
+			}
+		}
+	}
+} /*media query 1024 - ends*/

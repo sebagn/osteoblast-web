@@ -1,0 +1,46 @@
+@mixin bordes ($grosor: 1px, $color: $dark5, $radio: 1rem) {
+	border: $grosor solid $color;
+	border-radius: $radio;
+}
+
+/*CLASES*/ 
+//Backgrounds-start
+@each $bg-name, $color in $colores--dark{
+	.bg--#{$bg-name}{
+		background-color: #{$color};
+		color: $light5;
+	}
+}
+@each $bg-name, $color in $colores--light{
+	.bg--#{$bg-name}{
+		background-color: #{$color};
+	}
+}
+.texto--subrayado{
+	text-decoration: underline;
+}
+.texto--cursiva{
+	font-style: italic;
+}
+.texto--negrita{
+	font-weight: bold;
+}
+.texto--mayus{
+	text-transform: uppercase;
+}
+.texto--centrado{
+	text-align: center;
+}
+.border--negro{
+	@include bordes;
+	padding: 5px;
+}
+.border--redondeado{
+	border-radius: 1rem;
+}
+.lista--sinViñetas{
+	list-style-type: none;
+}
+.padding10{
+	padding: 10px;
+}

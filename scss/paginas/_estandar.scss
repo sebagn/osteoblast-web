@@ -1,0 +1,31 @@
+.mainBodySTD{
+    background-image: url(../images/bg1.png);
+}
+
+.secGaleriaSTD{
+    justify-content: center;
+
+    .secGaleriaSTD__galeria{
+        list-style-type: none;
+        h5{
+            padding-top: 1rem;
+        }
+        li{
+            margin: 0.5rem;
+            justify-self: center;
+            width: 360px;
+        }
+    }
+}
+
+.elCarousel{
+	height: 60vh;   
+	max-width: 600px;
+	align-self: center;
+	margin: 1rem;
+    .elCarousel__img{
+        height: 60vh;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+}

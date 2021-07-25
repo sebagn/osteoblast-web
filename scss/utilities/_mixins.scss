@@ -1,0 +1,10 @@
+%flex{
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+@mixin bordes ($grosor: 1px, $color: $dark5, $radio: 1rem) {
+	border: $grosor solid $color;
+	border-radius: $radio;
+}
