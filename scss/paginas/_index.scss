@@ -1,6 +1,6 @@
 
 	/* SECCION BIENVENIDA INDEX */
-.bienvenida{ 
+.bienvenida{
 	@include caja(auto,100%);
 	background-image: url("../images/bienvenida_360.jpg");
 	background-size: cover;
@@ -9,16 +9,31 @@
 	color: $dark4;
 }
 .bienvenida__titulo{
- 	text-align: center;
-	font-weight: bold; 
+	text-align: center;
+	font-weight: bold;
 	text-transform: uppercase;
 	margin-top: 4rem;
 	margin-bottom: 1rem;
 	font-style: italic;
 }
 .bienvenida__foto{
-	padding: 0% 5%;
+	position: relative; 
+	margin: 0 2rem;
 }
+.bienvenida__foto::before{
+	content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.45);
+	border-radius: 1rem;
+}
+.bienvenida__p{
+	position: relative;
+}
+
 	/*SECCION PRODUCTOS INDEX*/
 .secProductos{
 	@extend %flex;

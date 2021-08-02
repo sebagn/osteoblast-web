@@ -96,7 +96,13 @@
         height: 500px;
         background-image: url("../images/bienvenida_1024.jpg");
     }
-        
+    .bienvenida__foto{
+        position: relative; 
+        margin: 0 12rem;
+    }
+    .bienvenida__foto{
+        transform: translate(0, 200px);
+    }
     /*seccion STD 1024*/
     .secSTD{
         display: flex;

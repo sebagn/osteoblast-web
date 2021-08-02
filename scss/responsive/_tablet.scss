@@ -49,4 +49,7 @@
         height: 500px;
         background-image: url("../images/bienvenida_768.jpg");
     }
+    .bienvenida__foto{
+        transform: translate(0, 200px);
+    }
 } /*Cierra media query for tablet*/
