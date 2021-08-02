@@ -1,9 +1,18 @@
+%flex{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
 @mixin bordes ($grosor: 1px, $color: $dark5, $radio: 1rem) {
 	border: $grosor solid $color;
 	border-radius: $radio;
 }
-
-/*CLASES*/ 
+@mixin caja ($ancho: 100%, $alto: 100%){
+	width: $ancho;
+	height: $alto;
+}
+/*CLASES*/
 //Backgrounds-start
 @each $bg-name, $color in $colores--dark{
 	.bg--#{$bg-name}{

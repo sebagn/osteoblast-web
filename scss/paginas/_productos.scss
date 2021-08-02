@@ -4,38 +4,38 @@
     background-image: url(../images/bg1.png);
 }
 .secTitulo{
-	width: 100%;
+    width: 100%;
 }
 .introSeccion{
-	@extend %flex;
-	padding-left: 10px;
+    @extend %flex;
+    padding-left: 10px;
     text-align: center;
     .introProductos{
         width: 100%;
     }
-	.introSeccion__titulo{
-		width: 100%;
-		.introSeccion__subtitulo{
-			width: 100%;
-			text-align: center;
-		}
+    .introSeccion__titulo{
+        width: 100%;
+        .introSeccion__subtitulo{
+            width: 100%;
+            text-align: center;
+        }
         .introSeccion__p{
             text-align: center;
         }
-	}
+    }
     video{
         width: 100%;
         border-radius: 1rem;
     }
-	.introSeccion__imagenUno{
-		width: 40%;
-		margin: 10px;
-		border-radius: 15px;
-	}
+    .introSeccion__imagenUno{
+        width: 40%;
+        margin: 10px;
+        border-radius: 15px;
+    }
 }
 .mainProductos{
-	width: 100%;
-	padding: 10%;
+    width: 100%;
+    padding: 10%;
     .mainProductos__productos{
         *{
             padding: 10px;

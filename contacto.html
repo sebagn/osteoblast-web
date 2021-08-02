@@ -47,26 +47,53 @@
         </nav>
     </header>
 
-    <section>
+    <section class="texto--centrado">
         <h1 class="animate__animated animate__fadeInDown">Trabaja con nuestra marca</h2>
         <div class="container-sm padding10">
-            <div class="row">
-                <div class="col-sm-8">
-                    <h3 class="animate__animated animate__fadeInDown texto--centrado">Nuestros distribuidores</h3>
-                    <ul class="flex--list lista--sinViñetas texto--centrado animate__animated animate__backInLeft">
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                        <li><strong>Distribuidor</strong> <br> Calle Ciudad <br> Num de telefono</li>
-                    </ul>
-                </div>
-                <div class="enviaCV col-sm-4 bg--dark3 border--negro animate__animated animate__fadeInRight animate__delay-1s">
-                    <h3>Trabaja con nosotros</h3>
+            <div class="row justify-content-around">
+                <section class="col-sm-6 contacto__form bg--dark3 texto--centrado animacion__aparecer--2s" id="contacto">
+                    <h2>Contacto</h2>
+                    <form class="formulario" action="">
+                        <div class="formulario__div">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre"> <br>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido"> <br>
+                            <label for="email">Email</label>
+                            <input type="email" name="email"> <br>
+                        </div>
+                        <div class="formulario__div">Obra Social
+                            <select name="obrasocial" id="">
+                                <option value="no">No tiene</option>
+                                <option value="OS 1">OS 1</option>
+                                <option value="OS 2">OS 2</option>
+                                <option value="OS 3">OS 3</option>
+                                <option value="OS 4">OS 4</option>
+                                <option value="OS 5">OS 5</option>
+                                <option value="OS 6">OS 6</option>
+                                <option value="OS 7">OS 7</option>
+                                <option value="OS 8">OS 8</option>
+                            </select> 
+                        </div>  <br>
+                        <div class="formulario__div">
+                            <label for="pedidomed">Tiene pedido medico?</label>
+                            <input type="checkbox" name="pedidomed" id="" valu=1> <br>
+                        </div>
+                        <div class="formulario__div mb-3">
+                            <label for="formFileMultiple" class="form-label">Adjunte pedidos medicos:</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        </div>
+            
+                        <div class="formulario__div consulta">Consulta <br>
+                            <textarea class="consulta__caja" name="consulta" id="" cols="20" rows="10"></textarea> 
+                        </div> <br>
+            
+                        <input class="btn btn-light" type="submit" value="Enviar">
+            
+                    </form><br>
+                </section>
+                <div class="contacto__enviaCV col-sm-4 bg--dark1 border--negro animate__animated animate__fadeInRight animate__delay-1s">
+                    <h3>¿Queres unirte al equipo de osteoblast?</h3>
                     <p>Dejanos tu CV y te contactaremos</p>
                     <img class="border--redondeado" src="https://unsplash.com/photos/kUqqaRjJuw0/download?force=true&w=640" alt="manos escribiendo en notebook">
                     <button type="button" class="btn btn-success">Enviar CV</button>
@@ -75,48 +102,6 @@
         </div>
     </section>
     
-    <section class="bg--dark3 texto--centrado" id="contacto">
-        <h2>Contacto</h2>
-        <form class="formulario" action="">
-            <div class="formulario__div">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre"> <br>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido"> <br>
-                <label for="email">Email</label>
-                <input type="email" name="email"> <br>
-            </div>
-            <div class="formulario__div">Obra Social
-                <select name="obrasocial" id="">
-                    <option value="no">No tiene</option>
-                    <option value="OS 1">OS 1</option>
-                    <option value="OS 2">OS 2</option>
-                    <option value="OS 3">OS 3</option>
-                    <option value="OS 4">OS 4</option>
-                    <option value="OS 5">OS 5</option>
-                    <option value="OS 6">OS 6</option>
-                    <option value="OS 7">OS 7</option>
-                    <option value="OS 8">OS 8</option>
-                </select> 
-            </div>  <br>
-            <div class="formulario__div">
-                <label for="pedidomed">Tiene pedido medico?</label>
-                <input type="checkbox" name="pedidomed" id="" valu=1> <br>
-            </div>
-            <div class="formulario__div mb-3">
-                <label for="formFileMultiple" class="form-label">Adjunte pedidos medicos:</label>
-                <input class="form-control" type="file" id="formFileMultiple" multiple>
-            </div>
-
-            <div class="formulario__div consulta">Consulta <br>
-                <textarea class="consulta__caja" name="consulta" id="" cols="20" rows="10"></textarea> 
-            </div> <br>
-
-            <input class="btn btn-light" type="submit" value="Enviar">
-
-        </form><br>
-    </section>
-
     <footer>
         <p>© 2021 Osteoblast, todos los derechos reservados. <br> Planta SGO <br> Helman 157 <br> Santiago del Estero, Argentina</p>
     </footer>
