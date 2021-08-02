@@ -1,14 +1,14 @@
 {
   "name": "osteoblast_garcianallar",
   "version": "1.0.0",
-  "description": "",
+  "description": "empresa de tecnologia medica a medida",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Sebastian Garcia Nallar",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
