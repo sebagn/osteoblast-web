@@ -145,7 +145,13 @@
             width: 40%;
         }
     }
-
+    .mainProductos{
+        .mainProductos__productos{
+            p{
+                width: 50%;
+            }
+        }
+    }
 	//animacion-rotate--banner
 	.banner{
 		border-radius: 2rem;

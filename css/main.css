@@ -290,7 +290,8 @@ footer {
   border-radius: 1rem; }
 
 .bienvenida__p {
-  position: relative; }
+  position: relative;
+  font-size: 1.1rem; }
 
 /*SECCION PRODUCTOS INDEX*/
 .secProductos img {
@@ -393,7 +394,7 @@ footer {
     width: 15rem;
     font-size: 1.5rem; }
   .mainProductos .mainProductos__productos p {
-    width: 50%; }
+    width: 90%; }
 
 .flex--left {
   flex-flow: row-reverse wrap; }
@@ -602,6 +603,8 @@ footer {
   /* HTML PRODUCTOS */
   .introSeccion .introProductos {
     width: 40%; }
+  .mainProductos .mainProductos__productos p {
+    width: 50%; }
   .banner {
     border-radius: 2rem;
     margin: 0.5rem 0; }
