@@ -200,7 +200,7 @@ header {
 nav ul {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
   list-style-type: none;
   background-color: #012A44;
   align-items: center;
